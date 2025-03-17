@@ -12,6 +12,105 @@ html {
 
 /* Din CSS-kode under her */
 
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 30vh auto 20px;
+}
+
+header{
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    background-image: url(/img/Background-IMG.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: solid black;
+}
+
+.header-top{
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    justify-content: center;
+    gap: 75vw;
+}
+
+.header-bottom{
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    justify-content: right;
+    align-items: end;
+    font-size: 30px;
+    color: white;
+    padding-right: 10px;
+    font-family: monospace;
+}
+
+.icon-button{
+    width: 20vw;
+    height: 50%;
+    background: none;
+    border-style: none;
+    background-color: white;
+    opacity: 75%;
+}
+
+.log-inn-button{
+    width: 5vw;
+    height: 60%;
+    background: none;
+    border-style: none;
+    opacity: 75%;
+    background-color: white;
+}
+
+main{
+    width: 100vw;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.artikkeler{
+    display: grid;
+    gap: 25px;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.artikkel-wrapper{
+    width: 60vw;
+    padding: 10px;
+    background-color: rgb(207, 207, 207);
+}
+
+.overskrift{
+    height: 50px;
+    font-size: 40px;
+    padding: 5px;
+    font-family: monospace;
+}
+
+.undertekst{
+    font-family: monospace;
+    font-size: large;
+    height: 20px;
+    padding: 5px;
+}
+
+.innhold{
+    padding: 20px;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+footer{
+    width: 100vw;
+    background-color: white;
+}
+
 .commentList {
     /* Parent til comment */
 }
