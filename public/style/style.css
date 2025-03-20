@@ -16,7 +16,7 @@ body{
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-rows: 30vh auto 20px;
+    grid-template-rows: 25vh auto 20px;
 }
 
 header{
@@ -32,45 +32,95 @@ header{
 .header-top{
     display: flex;
     width: 100vw;
-    height: 15vh;
-    justify-content: center;
-    gap: 75vw;
+    height: 12.5vh;
+    padding: 10px;
 }
 
 .header-bottom{
     display: flex;
     width: 100vw;
-    height: 15vh;
-    justify-content: right;
-    align-items: end;
-    font-size: 30px;
+    height: 12.5vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 250%;
     color: white;
     padding-right: 10px;
     font-family: monospace;
 }
 
 .icon-button{
-    width: 20vw;
-    height: 50%;
-    background: none;
+    display: flex;
+    width: 35%;
+    height: 70%;
     border-style: none;
     background-color: white;
     opacity: 75%;
+    cursor: pointer;
+    background-image: url("/img/Logo.svg");
+    background-size: 12.5vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.icon-button:hover{
+    transform: rotate(-2deg) scale(1.05);
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.icon-button:not(:hover){
+    transform: rotate(0) scale(1);
+    transition: .5s;
 }
 
 .log-inn-button{
-    width: 5vw;
-    height: 60%;
+    display: flex;
+    width: 7.5%;
+    height: 70%;
     background: none;
     border-style: none;
     opacity: 75%;
     background-color: white;
+    cursor: pointer;
+    background-image: url("/img/Lock.png");
+    background-size: 3vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.log-inn-button:hover{
+    transform: rotate(2deg) scale(1.05);
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.log-inn-button:not(:hover){
+    transform: rotate(0) scale(1);
+    transition: .5s;
+}
+
+.header-top-left{
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    padding-left: 10px;
+}
+
+.header-top-right{
+    display: flex;
+    width: 50vw;
+    justify-content: right;
+    align-items: center;
+    padding-right: 10px;
 }
 
 main{
     width: 100vw;
     overflow: scroll;
     scrollbar-width: none;
+    background-color: gainsboro;
 }
 
 .artikkeler{
@@ -83,7 +133,7 @@ main{
 .artikkel-wrapper{
     width: 60vw;
     padding: 10px;
-    background-color: rgb(207, 207, 207);
+    background-color: bisque;
 }
 
 .overskrift{
@@ -108,18 +158,59 @@ main{
 
 footer{
     width: 100vw;
-    background-color: white;
+    background-color: gainsboro;
 }
 
 .commentList {
     /* Parent til comment */
+    display: flex;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 100vw;
+    min-height: 60vh;
+    max-height: 150vh;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
 }
 .comment {
     /* Parent til commentInfo og commentContent */
+    background-color: white;
+    width: 50vw;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 10vh;
+}
+
+.comment:not(:hover){
+    transform: rotate(0) scale(1);
+    transition: .5s;
 }
 .commentInfo {
     /* Child av comment */
+
 }
 .commentContent {
     /* Child av comment */
+}
+
+.Log-inn-form{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.basic-center{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+    background-color: gold;
+    align-items: center;
+    justify-content: center;
 }
