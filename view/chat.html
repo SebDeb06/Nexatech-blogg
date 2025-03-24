@@ -12,20 +12,34 @@
   </script>
 </head>
 <body>
-  <div style="display: grid;">
-    <h2>Alle artikkler</h2>
-    <button onclick="window.location.href='/'" style="height: 7.5vh; width: 15vw;"> Hovedside/Index</button>
-      <div class="commentList" id="commentList"></div>
-    
-      <h1>Legg til en artikkel</h1>
+  <header>
+    <div class="header-top">
+        <div class="header-top-left">
+            <button class="icon-button" onclick="window.location.href='/'"></button>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <h2>Skriv en artikkel</h2>
+    </div>
+</header>
+<main>
+  <div class="basic-center">
+    <h2>Legg til en artikkel</h2>
       <!-- Skjema for å legge til ny kommentar -->
-      <form onsubmit="submitComment(event)">
-        <textarea id="Kommentar" required placeholder="Skriv din kommentar her..."></textarea>
-        <br>
-        <button type="submit">Legg til en artikkel</button>
-      </form>
-      
-      <p><a href="/logout">Logg ut</a></p>
+       <div class="Log-inn-form">
+        <form onsubmit="submitComment(event)">
+          <textarea id="Kommentar" required placeholder="Skriv din kommentar her..."></textarea>
+          <br>
+          <button type="submit">Legg til en artikkel</button>
+        </form>
+       </div>
+       <p><a href="/logout">Logg ut</a></p>
+       <br>
+       <button onclick="window.location.href='/opprett-bruker'" class="opprett-bruker">Opprett en forfatter bruker</button>
   </div>
+</main>
+<footer>
+    <p style="justify-self: center; font-family: monospace;">NexaTech &copy; 2025</p>
+</footer>
 </body>
 </html>

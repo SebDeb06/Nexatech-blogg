@@ -20,7 +20,7 @@ app.get("/opprett-bruker", (req, res) => {
 
 // Rute for å serve kommentar-siden
 app.get("/kommentar", (req, res) => {
-    res.sendFile(path.join(__dirname, "view", "index.html"));
+    res.sendFile(path.join(__dirname, "view", "chat.html"));
 });
 
 // Rute for å logge ut og ødelegge session
